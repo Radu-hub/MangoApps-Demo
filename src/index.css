@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Summit Retail Group palette. Tailwind's default colors and shadows are removed so only these can be used. */
+@theme {
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-ink: #1f2937;
+  --color-muted: #57534e;
+  /* Summit green for the top bar, tabs, buttons, links and progress; the darker shade is for hover. */
+  --color-action: #1e7b45;
+  --color-action-dark: #14532d;
+  --color-accent: #b45309;
+  --color-danger: #b91c1c;
+  --color-page: #f3f1ec;
+  --color-line: #d6d3cc;
+  --color-divider: #e2dfd8;
+  --color-rule: #a8a29e;
+
+  /* Tints for status chips (tint/ink/edge) and rows that need attention (wash). */
+  --color-accent-wash: #fffbeb;
+  --color-accent-tint: #fef3c7;
+  --color-accent-ink: #92400e;
+  --color-accent-edge: #fcd34d;
+  --color-danger-wash: #fef2f2;
+  --color-danger-tint: #fee2e2;
+  --color-danger-ink: #991b1b;
+  --color-danger-edge: #fca5a5;
+
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Tight scale: 15px body, 18–20px headers, nothing above 24px. */
+  --text-*: initial;
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 13px;
+  --text-sm--line-height: 18px;
+  --text-base: 15px;
+  --text-base--line-height: 22px;
+  --text-lg: 18px;
+  --text-lg--line-height: 24px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+}
+
+@layer base {
+  body {
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
+    color: var(--color-ink);
+    background: var(--color-page);
+  }
+}
