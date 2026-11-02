@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-page;
+  }
+  body {
+    @apply bg-page font-sans text-base text-ink;
+  }
+}
